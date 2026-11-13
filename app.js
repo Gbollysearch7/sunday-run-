@@ -117,6 +117,10 @@
     }
     else if (t.id === 'pdpAdd') { if (current && chosenSize) addToBag(current.id, chosenSize); else $('#pdpSizes').classList.add('nudge'), setTimeout(() => $('#pdpSizes').classList.remove('nudge'), 600); }
     else if (t.id === 'pdpClose') closeProduct();
+    else if (t.id === 'pdpHome' || t.classList.contains('logo')) {   // logo = back to the home page (Shop All, top)
+      e.preventDefault(); if (!$('#pdp').hidden) closeProduct();
+      Object.assign(state, { type: 'all', colour: null, q: '', onlyNew: false, gender: 'all' }); closeAll(); render(); scrollTo({ top: 0 });
+    }
     else if (t.dataset.dot) { const g = $('#pdpGallery'); const k = +t.dataset.dot; g.scrollWidth > g.clientWidth + 4 ? g.scrollTo({ left: k * g.clientWidth, behavior: 'smooth' }) : g.children[k].scrollIntoView({ behavior: 'smooth' }); }
     else if (t.dataset.type) { state.type = t.dataset.type; state.onlyNew = false; render(); }
     else if (t.dataset.colour) { state.colour = state.colour === t.dataset.colour ? null : t.dataset.colour; render(); }

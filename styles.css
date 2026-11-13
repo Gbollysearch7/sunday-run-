@@ -140,14 +140,15 @@ button{background:none;border:0;padding:0;cursor:pointer}
 @media (hover:none){.card img.alt{display:none}.mw .quick{display:none}}   /* touch screens: no hover, tap opens the product */
 .info h3 a:hover{text-decoration:underline}
 body.locked{overflow:hidden}
-.pdp{position:fixed;inset:0;z-index:60;background:#fff;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,1fr);overflow:auto}
-.pdp-close{position:fixed;top:72px;right:24px;z-index:2;background:#fff;padding:6px 10px}
+.pdp{position:fixed;inset:0;z-index:60;background:#fff;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,1fr);grid-template-rows:auto 1fr;overflow:auto}
+.pdp-bar{grid-column:1/-1;position:sticky;top:0;z-index:3;background:var(--ink);color:#eaeaea;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;text-transform:uppercase}
+.pdp-close{color:#eaeaea}
 .pdp-gallery{display:grid;grid-template-columns:1fr 1fr;gap:2px;align-content:start}
 .pdp-gallery figure{margin:0;background:var(--tile);aspect-ratio:4/5}
 .pdp-gallery img{width:100%;height:100%;object-fit:cover;display:block}
 .pdp-gallery figure:last-child{grid-column:1/-1}
 .pdp-dots{display:none}
-.pdp-info{position:sticky;top:0;align-self:start;padding:110px 48px 48px;display:flex;flex-direction:column;gap:14px;text-transform:uppercase}
+.pdp-info{position:sticky;top:56px;align-self:start;padding:54px 48px 48px;display:flex;flex-direction:column;gap:14px;text-transform:uppercase}
 .pdp-info h2{margin:0;font:400 15px/1.4 var(--sans);letter-spacing:.04em}
 .pdp-price{margin:0;font-size:13px}
 .pdp-colour{margin:0;color:var(--muted)}
@@ -161,7 +162,7 @@ body.locked{overflow:hidden}
 .pdp-facts{margin:0;padding:0;list-style:none;color:var(--muted);line-height:2}
 @media (max-width:900px){
   .pdp{display:block}
-  .pdp-close{top:12px;right:12px}
+  .pdp-bar{padding:0 16px}
   .pdp-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0}
   .pdp-gallery figure{flex:0 0 100%;scroll-snap-align:start}
   .pdp-dots{display:flex;gap:6px;justify-content:center;padding:10px 0}
