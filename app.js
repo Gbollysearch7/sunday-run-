@@ -16,6 +16,11 @@
   const pair = p => state.gender === 'women' ? ['her', 'him'] : state.gender === 'men' ? ['him', 'her'] : ['main', 'hover'];
   const TITLES = { all: 'Shop All', women: 'Women', men: 'Men' };
 
+  // photos for a card: the lead and hover shots first, then the rest of this section's gallery, the print close-up last
+  function cardShots(p, a, b) {
+    const lead = [img(p, a), img(p, b)], rest = gallery(p).filter(s => s !== p.flat);
+    return [...lead, ...rest.slice(2)];
+  }
   function render() {
     let list = P.filter(p => (state.type === 'all' || p.type === state.type) && (!state.colour || p.colour === state.colour)
       && (!state.onlyNew || NEW.has(p.id)) && (!state.q || (label(p) + ' ' + p.colour).toLowerCase().includes(state.q)));
@@ -33,8 +38,8 @@
         <div class="mw">
           <a class="media" href="#${p.id}" data-open="${p.id}" aria-label="View ${label(p)}">
             ${NEW.has(p.id) ? '<span class="badge">New</span>' : ''}
-            <img src="${img(p, a)}" alt="${label(p)} in ${p.colour}" loading="lazy" width="960" height="1200">
-            <img class="alt" src="${img(p, b)}" alt="" loading="lazy" width="960" height="1200">
+            <div class="slides">${cardShots(p, a, b).map((s, i) => `<img${i === 1 ? ' class="alt"' : i > 1 ? ' class="more"' : ''} src="${s}" alt="${i ? '' : label(p) + ' in ' + p.colour}" loading="lazy" width="960" height="1200">`).join('')}</div>
+            <div class="sdots">${cardShots(p, a, b).map((_, i) => `<i${i ? '' : ' class="on"'}></i>`).join('')}</div>
           </a>
           <div class="quick"><span>Quick add</span>${SIZES.map(s => `<button data-add="${p.id}" data-size="${s}" aria-label="Add ${label(p)} size ${s}">${s}</button>`).join('')}</div>
         </div>
@@ -140,6 +145,11 @@
   const msgs = $$('#announce span'); let m = 0;
   setInterval(() => { msgs[m].classList.remove('on'); m = (m + 1) % msgs.length; msgs[m].classList.add('on'); }, 4500);
 
+  document.addEventListener('scroll', e => {
+    const s = e.target; if (!(s instanceof Element) || !s.classList.contains('slides')) return;
+    const i = Math.round(s.scrollLeft / s.clientWidth);
+    s.parentElement.querySelectorAll('.sdots i').forEach((d, k) => d.classList.toggle('on', k === i));
+  }, true);
   render(); renderBag();
   const startId = location.hash.slice(1); if (startId && P.some(p => p.id === startId)) openProduct(startId);
 })();
