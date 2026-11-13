@@ -1,0 +1,10 @@
+# build tools and local working files stay off the live site
+*.py
+products.json
+store-preview.png
+.DS_Store
+__pycache__/
+# images from the old layout, no longer used by the site
+img/*-model.jpg
+img/*-alt.jpg
+.vercel

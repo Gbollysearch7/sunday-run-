@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop All | Racing Faith</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700;900&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="announce" id="announce">
+  <span class="on">Complimentary UK shipping on orders over £75</span>
+  <span>Made to order, printed in the UK</span>
+  <span>Easy 30-day returns</span>
+</div>
+
+<header class="header">
+  <button class="icon-btn burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+  <a class="logo" href="#" aria-label="Racing Faith home"><!-- BRAND NAME: change here and in the footer -->RACING&nbsp;FAITH</a>
+  <nav class="nav" aria-label="Main">
+    <a href="#" data-nav="new">New In</a>
+    <a href="#" data-gender="women">Women</a>
+    <a href="#" data-gender="men">Men</a>
+    <a href="#" data-nav="all" class="current">Shop All</a>
+    <a href="#footer">Explore</a>
+  </nav>
+  <div class="tools">
+    <button class="text-btn hide-m" id="searchBtn">Search</button>
+    <button class="text-btn hide-m">GBP £</button>
+    <button class="text-btn hide-m">Account</button>
+    <button class="text-btn" id="bagBtn">Bag (<span id="bagCount">0</span>)</button>
+  </div>
+</header>
+
+<div class="searchbar" id="searchbar" hidden>
+  <input id="search" type="search" placeholder="Search the collection" aria-label="Search the collection">
+  <button class="text-btn dark" id="searchClose">Close</button>
+</div>
+
+<main>
+  <section class="intro">
+    <h1 id="collTitle">Shop All</h1>
+    <p>The first collection. Forty pieces of bold racing typography on heavyweight cotton. Unisex, oversized, made for anyone who dresses well and believes out loud, from Sunday service to Monday street.</p>
+  </section>
+
+  <div class="toolbar">
+    <div class="filters" id="filters" role="group" aria-label="Filter by product type">
+      <button data-type="all" class="on">All</button>
+      <button data-type="tee">Tees</button>
+      <button data-type="hoodie">Hoodies</button>
+      <button data-type="sweatshirt">Sweatshirts</button>
+      <span class="sep"></span>
+      <button data-colour="white">White</button>
+      <button data-colour="black">Black</button>
+    </div>
+    <div class="right">
+      <span class="count" id="count"></span>
+      <label class="sort">Sort
+        <select id="sort" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price, low to high</option>
+          <option value="high">Price, high to low</option>
+          <option value="az">A to Z</option>
+        </select>
+      </label>
+      <div class="views hide-m" role="group" aria-label="Grid size">
+        <button data-cols="2" aria-label="Two columns"><i></i><i></i></button>
+        <button data-cols="4" class="on" aria-label="Four columns"><i></i><i></i><i></i><i></i></button>
+      </div>
+    </div>
+  </div>
+
+  <section class="grid" id="grid" data-cols="4" aria-live="polite"></section>
+  <p class="empty" id="empty" hidden>Nothing matches that yet. <button class="link" id="reset">Clear filters</button></p>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="f-top">
+    <div></div>
+    <ul>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Delivery &amp; Returns</a></li>
+      <li><a href="#">Size Guide</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms &amp; Conditions</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">TikTok</a></li>
+      <li><a href="#">Pinterest</a></li>
+    </ul>
+  </div>
+  <div class="f-bottom">
+    <p class="tagline">Run your race.<br>Keep the faith.</p>
+    <form class="news" id="news">
+      <label for="email">Stay in touch</label>
+      <div class="row">
+        <input id="email" type="email" required placeholder="Email address">
+        <button type="submit">Subscribe</button>
+      </div>
+      <p class="note" id="newsNote" aria-live="polite"></p>
+    </form>
+  </div>
+  <p class="legal">© 2026 Racing Faith. All rights reserved.</p>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<aside class="drawer left" id="menu" aria-label="Menu" hidden>
+  <button class="text-btn dark close" data-close>Close</button>
+  <a href="#" data-nav="new">New In</a>
+  <a href="#" data-nav="all">Shop All</a>
+  <a href="#" data-gender="women">Women</a>
+  <a href="#" data-gender="men">Men</a>
+  <a href="#" data-nav="tee">Tees</a>
+  <a href="#" data-nav="hoodie">Hoodies</a>
+  <a href="#" data-nav="sweatshirt">Sweatshirts</a>
+</aside>
+
+<aside class="drawer" id="bag" aria-label="Shopping bag" hidden>
+  <div class="d-head"><h2>Shopping bag</h2><button class="text-btn dark" data-close>Close</button></div>
+  <div class="d-body" id="bagItems"></div>
+  <div class="d-foot">
+    <div class="total"><span>Subtotal</span><span id="bagTotal">£0.00</span></div>
+    <button class="checkout" id="checkout">Checkout</button>
+    <p class="note">Checkout is not connected yet.</p>
+  </div>
+</aside>
+
+<section class="pdp" id="pdp" hidden aria-label="Product">
+  <button class="text-btn dark pdp-close" id="pdpClose" type="button">Close</button>
+  <div class="pdp-gallery" id="pdpGallery"></div>
+  <div class="pdp-dots" id="pdpDots"></div>
+  <div class="pdp-info">
+    <h2 id="pdpTitle"></h2>
+    <p class="pdp-price" id="pdpPrice"></p>
+    <p class="pdp-colour">Colour: <span id="pdpColour"></span></p>
+    <div class="pdp-sizes" id="pdpSizes" role="group" aria-label="Size"></div>
+    <button class="checkout" id="pdpAdd" type="button">Select a size</button>
+    <p class="pdp-desc" id="pdpDesc"></p>
+    <ul class="pdp-facts"><li>Unisex oversized fit</li><li>Heavyweight cotton</li><li>Made to order in the UK</li><li>Easy 30-day returns</li></ul>
+  </div>
+</section>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
