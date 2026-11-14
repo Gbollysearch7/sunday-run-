@@ -1008,7 +1008,7 @@ window.PRODUCTS = [
   "title": "Carried By Grace",
   "type": "sweatshirt",
   "colour": "white",
-  "price": 45,
+  "price": 40,
   "side": "back",
   "gallery": [
    {
@@ -1040,7 +1040,7 @@ window.PRODUCTS = [
   "title": "Stand In The Light",
   "type": "sweatshirt",
   "colour": "white",
-  "price": 45,
+  "price": 40,
   "side": "back",
   "gallery": [
    {
@@ -1072,7 +1072,7 @@ window.PRODUCTS = [
   "title": "Wild Hope Steady Faith",
   "type": "sweatshirt",
   "colour": "white",
-  "price": 45,
+  "price": 40,
   "side": "front",
   "gallery": [
    {
@@ -1108,7 +1108,7 @@ window.PRODUCTS = [
   "title": "Connected",
   "type": "sweatshirt",
   "colour": "black",
-  "price": 45,
+  "price": 40,
   "side": "front",
   "gallery": [
    {
@@ -1144,7 +1144,7 @@ window.PRODUCTS = [
   "title": "Upward",
   "type": "sweatshirt",
   "colour": "black",
-  "price": 45,
+  "price": 40,
   "side": "front",
   "gallery": [
    {
@@ -1180,7 +1180,7 @@ window.PRODUCTS = [
   "title": "Heaven Draws Near",
   "type": "sweatshirt",
   "colour": "black",
-  "price": 45,
+  "price": 40,
   "side": "front",
   "gallery": [
    {

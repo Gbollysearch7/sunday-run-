@@ -77,10 +77,10 @@
     const where = p.side === 'back' ? 'printed large across the back' : 'printed on the chest';
     $('#pdpDesc').textContent = p.type === 'tee'
       ? `${p.title}, ${where} of a classic heavy-cotton tee. Regular unisex fit: size up one or two for the relaxed, oversized look in our photos. Made to order.`
-      : `${p.title}, ${where} of an oversized, heavyweight ${typeName(p).toLowerCase()}. Dropped shoulders, relaxed cut, made to order.`;
+      : `${p.title}, ${where} of a ${p.type === 'hoodie' ? 'soft premium cotton-blend hoodie' : 'classic cotton-blend sweatshirt'}. Regular unisex fit: size up one or two for the relaxed, oversized look in our photos. Made to order.`;
     $('#pdpFacts').innerHTML = (p.type === 'tee'
       ? ['Classic unisex fit, size up for oversized', '100% heavy cotton', 'Made to order']
-      : ['Unisex oversized fit', 'Heavyweight fleece', 'Made to order']).map(f => `<li>${f}</li>`).join('');
+      : ['Classic unisex fit, size up for oversized', p.type === 'hoodie' ? 'Soft brushed cotton-blend fleece' : 'Cotton-blend fleece', 'Made to order']).map(f => `<li>${f}</li>`).join('');
     $('#pdpSizes').innerHTML = SIZES.map(s => `<button type="button" data-size-pick="${s}">${s}</button>`).join('');
     $('#pdpAdd').textContent = 'Select a size';
     $('#pdp').hidden = false; document.body.classList.add('locked');
