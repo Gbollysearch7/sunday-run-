@@ -74,7 +74,13 @@
     $('#pdpTitle').textContent = label(p);
     $('#pdpPrice').textContent = money(p.price);
     $('#pdpColour').textContent = p.colour === 'white' ? 'Optical white' : 'Jet black';
-    $('#pdpDesc').textContent = `${p.title}, ${p.side === 'back' ? 'printed large across the back' : 'printed on the chest'} of an oversized, heavyweight ${typeName(p).toLowerCase()}. Dropped shoulders, straight full-length cut, made to order in the UK.`;
+    const where = p.side === 'back' ? 'printed large across the back' : 'printed on the chest';
+    $('#pdpDesc').textContent = p.type === 'tee'
+      ? `${p.title}, ${where} of a classic heavy-cotton tee. Regular unisex fit: size up one or two for the relaxed, oversized look in our photos. Made to order.`
+      : `${p.title}, ${where} of an oversized, heavyweight ${typeName(p).toLowerCase()}. Dropped shoulders, relaxed cut, made to order.`;
+    $('#pdpFacts').innerHTML = (p.type === 'tee'
+      ? ['Classic unisex fit, size up for oversized', '100% heavy cotton', 'Made to order']
+      : ['Unisex oversized fit', 'Heavyweight fleece', 'Made to order']).map(f => `<li>${f}</li>`).join('');
     $('#pdpSizes').innerHTML = SIZES.map(s => `<button type="button" data-size-pick="${s}">${s}</button>`).join('');
     $('#pdpAdd').textContent = 'Select a size';
     $('#pdp').hidden = false; document.body.classList.add('locked');
