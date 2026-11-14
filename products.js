@@ -4,7 +4,7 @@ window.PRODUCTS = [
   "title": "She Runs with Faith",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -40,7 +40,7 @@ window.PRODUCTS = [
   "title": "Full of Hope",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -64,7 +64,7 @@ window.PRODUCTS = [
   "title": "Loved by Jesus",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -100,7 +100,7 @@ window.PRODUCTS = [
   "title": "Redeemed With Love",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -124,7 +124,7 @@ window.PRODUCTS = [
   "title": "Run the Race",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -160,7 +160,7 @@ window.PRODUCTS = [
   "title": "Jesus on My Heart",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -192,7 +192,7 @@ window.PRODUCTS = [
   "title": "Fearless in Christ",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -224,7 +224,7 @@ window.PRODUCTS = [
   "title": "We Carry The Light",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -248,7 +248,7 @@ window.PRODUCTS = [
   "title": "Mercy Every Morning",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -272,7 +272,7 @@ window.PRODUCTS = [
   "title": "His Promise Stands",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -304,7 +304,7 @@ window.PRODUCTS = [
   "title": "Led By His Love",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -328,7 +328,7 @@ window.PRODUCTS = [
   "title": "Hope Lives Here",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -352,7 +352,7 @@ window.PRODUCTS = [
   "title": "Spirit Led",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -376,7 +376,7 @@ window.PRODUCTS = [
   "title": "Grace Goes Before Me",
   "type": "tee",
   "colour": "white",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -400,7 +400,7 @@ window.PRODUCTS = [
   "title": "Faith over Fear",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -428,7 +428,7 @@ window.PRODUCTS = [
   "title": "Trust Beyond The Trail",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -452,7 +452,7 @@ window.PRODUCTS = [
   "title": "Grow In Grace",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -476,7 +476,7 @@ window.PRODUCTS = [
   "title": "Grace Goes On",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -500,7 +500,7 @@ window.PRODUCTS = [
   "title": "Heaven Bound",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -536,7 +536,7 @@ window.PRODUCTS = [
   "title": "No Turning Back",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -572,7 +572,7 @@ window.PRODUCTS = [
   "title": "Endure",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -600,7 +600,7 @@ window.PRODUCTS = [
   "title": "Renewed",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -632,7 +632,7 @@ window.PRODUCTS = [
   "title": "Grace Finds Me",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -664,7 +664,7 @@ window.PRODUCTS = [
   "title": "Rooted in His Love",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -688,7 +688,7 @@ window.PRODUCTS = [
   "title": "His Grace Is Enough",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -712,7 +712,7 @@ window.PRODUCTS = [
   "title": "Jesus My Anchor",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -740,7 +740,7 @@ window.PRODUCTS = [
   "title": "Eternal Hope",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -768,7 +768,7 @@ window.PRODUCTS = [
   "title": "Driven by Grace",
   "type": "tee",
   "colour": "black",
-  "price": 38,
+  "price": 28,
   "side": "front",
   "gallery": [
    {
@@ -804,7 +804,7 @@ window.PRODUCTS = [
   "title": "Death Lost Its Hold",
   "type": "hoodie",
   "colour": "white",
-  "price": 68,
+  "price": 50,
   "side": "back",
   "gallery": [
    {
@@ -836,7 +836,7 @@ window.PRODUCTS = [
   "title": "Fix Your Eyes",
   "type": "hoodie",
   "colour": "white",
-  "price": 68,
+  "price": 50,
   "side": "front",
   "gallery": [
    {
@@ -872,7 +872,7 @@ window.PRODUCTS = [
   "title": "Grace in Motion",
   "type": "hoodie",
   "colour": "white",
-  "price": 68,
+  "price": 50,
   "side": "front",
   "gallery": [
    {
@@ -908,7 +908,7 @@ window.PRODUCTS = [
   "title": "Courage Through Christ",
   "type": "hoodie",
   "colour": "black",
-  "price": 68,
+  "price": 50,
   "side": "back",
   "gallery": [
    {
@@ -940,7 +940,7 @@ window.PRODUCTS = [
   "title": "Mercy Never Ends",
   "type": "hoodie",
   "colour": "black",
-  "price": 68,
+  "price": 50,
   "side": "front",
   "gallery": [
    {
@@ -976,7 +976,7 @@ window.PRODUCTS = [
   "title": "Believe",
   "type": "hoodie",
   "colour": "black",
-  "price": 68,
+  "price": 50,
   "side": "back",
   "gallery": [
    {
@@ -1008,7 +1008,7 @@ window.PRODUCTS = [
   "title": "Carried By Grace",
   "type": "sweatshirt",
   "colour": "white",
-  "price": 58,
+  "price": 45,
   "side": "back",
   "gallery": [
    {
@@ -1040,7 +1040,7 @@ window.PRODUCTS = [
   "title": "Stand In The Light",
   "type": "sweatshirt",
   "colour": "white",
-  "price": 58,
+  "price": 45,
   "side": "back",
   "gallery": [
    {
@@ -1072,7 +1072,7 @@ window.PRODUCTS = [
   "title": "Wild Hope Steady Faith",
   "type": "sweatshirt",
   "colour": "white",
-  "price": 58,
+  "price": 45,
   "side": "front",
   "gallery": [
    {
@@ -1108,7 +1108,7 @@ window.PRODUCTS = [
   "title": "Connected",
   "type": "sweatshirt",
   "colour": "black",
-  "price": 58,
+  "price": 45,
   "side": "front",
   "gallery": [
    {
@@ -1144,7 +1144,7 @@ window.PRODUCTS = [
   "title": "Upward",
   "type": "sweatshirt",
   "colour": "black",
-  "price": 58,
+  "price": 45,
   "side": "front",
   "gallery": [
    {
@@ -1180,7 +1180,7 @@ window.PRODUCTS = [
   "title": "Heaven Draws Near",
   "type": "sweatshirt",
   "colour": "black",
-  "price": 58,
+  "price": 45,
   "side": "front",
   "gallery": [
    {
